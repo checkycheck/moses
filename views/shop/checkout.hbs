@@ -1,0 +1,33 @@
+<div class="content9">
+    <div class="section1">
+      <h1>Make payment of</h1>
+      <h1>NGN{{ totalPrice }}</h1>
+      <hr>
+    </div>
+
+    <form name='myForm' action="paystack/pay" method="POST">
+    <div class="form-group">
+
+                    <label for="exampleInputPassword1">Full name</label>
+                      <input type="text" name="full_name" class="form-control" id="full_name" placeholder="fullname">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+
+      {{!-- <h1>FULL_NAME</h1>
+      <input type="text" name="full_name" id="full_name" placeholder="full_name">
+      <h1>EMAIL</h1>
+      <input type="email" name="email" id="email" placeholder="email"> --}}
+      
+      <input type="hidden" name="amount" id="amount" value="{{ totalPrice }}"><br><br>
+
+      <button type="submit"class="primary rex-bottom-medium rex-btn-icon">
+            <span class="rex-btn-text" >Submit</span>
+            <span class="rex-btn-text-icon"><i class="fa fa-arrow-circle-o-right"></i></span>
+      </button>
+      </div>
+    </form>
+  </div>

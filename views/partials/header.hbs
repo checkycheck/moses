@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/pop.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mdb.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+    <title>MAIN</title>
+</head>
+<body>
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">HOME</h4>
+            <p class="text-muted">Farmers our pride</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+            <ul class="list-unstyled">
+                <li><a href="/" class="text-white">HOME</a></li>
+                <li><a href="/contact" class="text-white">CONTACT</a></li>
+                
+               
+                {{#if isAuthenticated}}
+                 <li>
+                    <a href="/shopping-cart">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>shopping cart 
+                        <span class="badge">{{session.cart.totalQty}}</span>
+                    </a>
+                    </li>
+
+
+                {{!-- <li><a href="#" class="text-white">MANAGEMENT</a></li> --}}
+                
+                <li><a href="/users/logout" class="text-white">LOGOUT</a></li>
+                {{else}}
+                <li><a href="/users/register" class="text-white">REGISTER</a></li>
+                <li><a href="/users/login" class="text-white">LOGIN</a></li>
+                {{/if}}
+                <li><a href="/about" class="text-white">ABOUT US</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+            {{!-- <img id="logo" src="./img/13.png" alt=""> --}}
+            <strong>TEKUNS-FARM</strong>
+        </a>
+        <div class="search">
+            <form>
+                <input type="text" placeholder="search here">
+                <button type="submit">
+                    <span class="fa fa-search fa-"></span>
+                </button> 
+            </form>
+        </div>
+        <div class="call">
+            <a href="tel:+23481625355714">
+                <span class="fa fa-phone fa-2x">+2348162535714</span>
+            </a>  
+        </div>
+        <div class="cart">
+            <a href="#">
+                <span id="shopping-cart" title="shopping cart" class="fa fa-shopping-cart fa-2x"></span>
+            </a>  
+        </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </div>
+</header>
+ {{#if success_messages}}
+    <div class="alert alert-success">{{success_messages}}</div>
+    {{/if}}
+    
+    {{#if error_messages}}
+    <div class="alert alert-danger">{{error_messages}}</div>
+    {{/if}}

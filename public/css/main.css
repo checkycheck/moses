@@ -1,0 +1,415 @@
+/************************************* MAIN BODY ****************************************************/
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+	background: rgb(3, 44, 44);
+}
+/* =============================================================================================== */
+
+
+/****************************************** HEADER ***************************************************/
+header #logo {
+	width: 150px;
+	height: 50px;
+}
+#img1 {
+	width: 348px;
+	height: 225px;
+}
+
+.badge-secondary{
+  float: right;
+  margin: 20px;
+  
+}
+.give{
+  margin-left: 400px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+
+header .call a{
+	color: #fff;
+	font-size: 10px;
+	margin-top: 5px;
+}
+header .cart a{
+	color: #fff;
+  margin-top: 5px;
+}
+/* ======================================================================================================== */
+
+
+/********************************* CAROUSEL SLIDER **********************************************************/
+.slider{
+	width: 1000px;
+	height: 400px;
+}
+/* ===================================================================================================== */
+
+
+/********************************************* CARDS  ****************************************************/
+.card img{
+	width: 100% !important;
+}
+/* ==================================================================================================== */
+
+/*************************************************** ABOUT US *******************************************/
+#logo {
+	width: 150px;
+	height: 50px;
+}
+.img-wrap {
+	margin: 20px;
+	width: 100%;
+}
+.img-wrap img{
+	width: 100%;
+	padding: 10px;
+	border-radius: 50%;
+	box-shadow: 0 0 40px #999999;
+	background-color: rgb(214, 203, 203);
+}
+#aboutus{
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(3, 44, 44);
+	color: #f3f3f3;
+}
+#aboutus h2 {
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+	margin-bottom: 25px;
+	text-align: center;
+	font-size: 35px;
+}
+#aboutus p {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: justify;
+	font-size: 17px;
+
+}
+span {
+	margin-bottom: 5px;
+}  
+/* ================================================================================================= */
+
+/******************************************** contact us *********************************************/
+.contact-section{
+  background: rgb(3, 44, 44);
+  color: #fff;
+  padding: 40px;   
+}
+.contact-section form h1 {
+	text-align: center;
+	color: #ddd;
+}
+.border {
+	width: 100px;
+	height: 10px;
+	background: #34495e;
+	margin: 40px auto;
+}
+.contact-form {
+	background: url(../img/back2.jpg) no-repeat center;
+	margin: auto;
+	padding: 10px 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 600px;
+  height: 520px;
+}
+.contact-form-text {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 16px 0;
+	border: 0;
+	background: #111;
+	padding: 20px 40px;
+	outline: none;
+	color: #ddd;
+	transition: 0.5s;
+}
+.contact-form-text:focus{
+	box-shadow: 0 0 10px 4px #34495e;
+  }
+textarea.contact-form-text {
+	resize: none;
+	height: 120px;
+}
+.contact-form-btn {
+	float: right;
+	border: 0;
+	background: #34495e;
+	color: #fff;
+	padding: 12px 50px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.contact-form-btn:hover{
+	background: #2980b9;
+}
+/* ================================================================================================= */
+
+
+/***************************************** Management *************************************************/
+ .img-wrap {
+	margin: 20px;
+	width: 100%;
+}
+.img-wrap img{
+	width: 100%;
+	padding: 10px;
+	border-radius: 50%;
+	box-shadow: 0 0 40px #999999;
+	background-color: rgb(214, 203, 203);
+}
+#management{
+	height:150vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(3, 44, 44);
+	color: #f3f3f3;
+}
+#management h2 {
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+	margin-bottom: 25px;
+	text-align: center;
+	font-size: 35px;
+}
+#management p {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: justify;
+	font-size: 17px;
+}
+/*=========================================================================================  */
+
+/* .container{
+    margin-top: 100px; */
+/* } */
+ /* .img{ 
+    width: 100%;
+    height: 400px;
+}  */
+.newarrival{
+    background: green;
+    width: 50px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+} 
+.col-md-7 h2 {
+    color: #555;
+} 
+.stars{
+    height: 15px;
+    width: 80px;
+}
+ .price{
+    color: #fE980F;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+ } 
+.input{
+    border: 1px solid #ccc;
+    font-weight: bold;
+    height: 33px;
+    text-align: center;
+    width: 30px;
+}
+.cart{
+    background: #fE980F;
+    /* color: #ffffff; */
+    font-size: 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+} 
+/*************************************** REGISTER CSS *******************************************/
+.register{
+    background: url(../img/pepper.jpg);
+    background-size: cover;
+    padding: 40px;
+    /* width: 400px; */
+    margin: auto;
+    height: 450px;
+    margin-left: 180x;
+    display: flex;
+    font-family: Tahoma, Geneva, sans-serif;
+
+  }
+  .register form{
+    background: rgba(44, 62, 80, 0.7);
+    width: 280px;
+    height: 350px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+  }
+  .register form input[type=text]{
+    width: 250px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-family: 'play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+  }
+  .register form input:focus{
+    box-shadow: 0 0 10px 4px #3e6994;
+  }
+  .register form input{
+    width: 250px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-family: 'play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+  }
+  .register form input[type=button]{
+    border: none;
+    width: 190px;
+    background: white;
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .register form input[type=button]:hover{
+    color: #fff;
+    background-color: black;
+  }
+  .register form h2{
+    color: white;
+  }
+  .register form a{
+    color: yellow;
+    text-decoration: blink;
+  }
+  .register form a:hover{
+    color: skyblue;
+  }
+  #reset{
+    margin-left: 5px;
+    font-size: 13px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif
+  }
+  #forgot{
+    margin-left: 35px;
+    font-size: 13px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif
+  }
+  #cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  
+  }
+  ::placeholder{
+    color: aliceblue;
+    opacity: 0.8; firefox
+  }
+/* ============================================================================================ */
+
+
+/******************************************* services ******************************************/
+.services {
+	border: 2px solid #f3f3f3;
+	padding: 10px;
+	text-align: center;
+}
+.free-shipping {
+	/* border: 2px solid red;  */
+	display: inline-block; 
+	text-align: center;
+	width: 350px;
+	padding: 10px;
+}
+.pay-back {
+	/* border: 2px solid red; */
+	display: inline-block; 
+	text-align: center;
+	width: 350px;
+	padding: 10px;
+}
+.calls {
+	/* border: 2px solid red; */
+	display: inline-block; 
+	text-align: center;
+	width: 350px;
+	padding: 10px;
+}
+/* ====================================================================================================== */
+
+
+/****************************************** FOOTER **************************************************************/
+footer {
+	background-color: rgb(52, 58,64);
+  display: inline-block;
+}
+footer ul li{
+	list-style: none;
+	display: inline;
+}
+footer ul li a{
+	padding: 5px;
+	color: teal;
+}
+footer .socials{
+	width: 300px;
+	display: inline-block;
+	position: relative;
+	right: 40px;
+	margin-top: 5px;
+}
+footer .copy{
+	display: inline-block;
+	margin: 0 0 0 70px;
+}
+footer .back{
+	display: inline-block;
+	position: relative;
+	left: 65%;
+	bottom: 10px;
+}
+footer .back a{
+	color: teal;
+}
+/* ===================================================checkout form==================================================== */
+
+
+
+/* .form1{
+  text-align: center;
+  margin: 80px 300px;
+} */
+.content9{
+  text-align: center;
+  margin: 80px 300px;
+  /* background-color: black; */
+  /* opacity: 0.5; */
+  /* color: white; */
+  /* border-radius: 50px; */
+}
